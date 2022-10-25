@@ -9,8 +9,12 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Counter: typeof import('./components/Counter.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
+    HeroCard: typeof import('./components/HeroCard/HeroCard.vue')['default']
+    HeroImage: typeof import('./components/HeroCard/HeroImage.vue')['default']
+    HeroStats: typeof import('./components/HeroCard/HeroStats.vue')['default']
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    StatField: typeof import('./components/HeroCard/StatField.vue')['default']
   }
 }
